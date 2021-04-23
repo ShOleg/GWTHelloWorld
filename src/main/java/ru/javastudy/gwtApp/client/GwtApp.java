@@ -1,5 +1,5 @@
 package ru.javastudy.gwtApp.client;
-/* ShOleg  22.04.2021*/
+/* ShOleg  23.04.2021*/
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
