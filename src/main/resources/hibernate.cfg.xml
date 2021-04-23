@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/first_db</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property> <!-- DB Dialect -->
+    <property name="hbm2ddl.auto">update</property> <!-- create / create-drop / update -->
+    <property name="show_sql">true</property> <!-- Show SQL in console -->
+    <property name="format_sql">true</property> <!-- Show SQL formatted -->
+
+<!--    <mapping class="ru.javastudy.gwtApp.shared.Users"/>-->
+    <mapping class="ru.javastudy.gwtApp.shared.Result"/>
+    <mapping class="ru.javastudy.gwtApp.shared.Result01"/>
+
+  </session-factory>
+</hibernate-configuration>
